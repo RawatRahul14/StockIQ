@@ -7,7 +7,7 @@ load_dotenv(find_dotenv())
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_API_BASE = os.getenv("DEEPSEEK_API_BASE")
 
-def load_model():
+def load_llm():
 
     llm = ChatOpenAI(
         model_name = "deepseek-chat",
